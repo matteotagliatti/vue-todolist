@@ -88,3 +88,11 @@ input[type="submit"] {
   color: rgba(18, 74, 185, 1);
   background-color: #e9f3ff;
 }
+
+.todo li {
+  cursor: pointer;
+}
+
+.todo li.line-through {
+  text-decoration-line: line-through;
+}

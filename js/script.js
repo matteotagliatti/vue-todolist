@@ -17,5 +17,9 @@ const app = new Vue({
         this.newTodo = "";
       }
     },
+
+    AddLineThrough(todoIndex) {
+      this.todos[todoIndex].done = !this.todos[todoIndex].done;
+    },
   },
 });
