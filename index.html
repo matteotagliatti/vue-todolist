@@ -21,8 +21,11 @@
       </div>
       <div class="todo">
         <h2>Todo:</h2>
-        <ul>
-          <li>Test</li>
+        <ul v-if="todos.length > 0">
+          <li v-for="todo in todos">{{ todo.text }}</li>
+        </ul>
+        <ul v-else>
+          <li>No Todo 🚀</li>
         </ul>
       </div>
     </main>
