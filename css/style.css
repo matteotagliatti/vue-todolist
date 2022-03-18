@@ -129,6 +129,7 @@ input[type="checkbox"] {
   background-color: var(--very-light-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .todo li {
