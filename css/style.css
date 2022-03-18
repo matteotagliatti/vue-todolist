@@ -82,7 +82,8 @@ input[type="checkbox"] {
 }
 
 .title span {
-  color: #bbdeff;
+  color: white;
+  opacity: 0.8;
 }
 
 .add-todo {
