@@ -1,8 +1,12 @@
+/* Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* Theme Colours */
 
 html[data-theme="blue"] {
   --light-color: rgba(35, 122, 228, 1);
@@ -13,6 +17,8 @@ html[data-theme="red"] {
   --light-color: #ff3c52;
   --dark-color: #d21d34;
 }
+
+/* Global */
 
 body {
   min-height: 100vh;
@@ -50,6 +56,8 @@ small {
   font-size: 0.7rem;
 }
 
+/* Global - Input */
+
 input {
   background-color: transparent;
   border: none;
@@ -71,6 +79,8 @@ input[type="submit"] {
 input[type="checkbox"] {
   display: none;
 }
+
+/* Classes */
 
 .checkbox-label {
   display: inline-block;
@@ -129,6 +139,8 @@ input[type="checkbox"] {
   padding: 0.8rem;
 }
 
+/* Classes - Checkbox and Line Through */
+
 .todo li div.checkbox-title {
   width: 100%;
   display: flex;
@@ -143,6 +155,8 @@ input[type="checkbox"] {
 .todo li div.line-through input[type="checkbox"] + .checkbox-label {
   background-color: var(--dark-color);
 }
+
+/* Classes - Change Theme */
 
 .change-theme {
   position: absolute;
