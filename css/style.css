@@ -11,11 +11,13 @@
 html[data-theme="blue"] {
   --light-color: rgba(35, 122, 228, 1);
   --dark-color: rgba(18, 74, 185, 1);
+  --very-light-color: #e9f3ff;
 }
 
 html[data-theme="red"] {
   --light-color: #ff3c52;
   --dark-color: #d21d34;
+  --very-light-color: #fef2f2;
 }
 
 /* Global */
@@ -124,7 +126,7 @@ input[type="checkbox"] {
 .todo li {
   border-radius: 0.5rem;
   color: var(--dark-color);
-  background-color: #e9f3ff;
+  background-color: var(--very-light-color);
   display: flex;
   justify-content: space-between;
 }
