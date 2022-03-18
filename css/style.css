@@ -59,6 +59,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-label {
+  display: inline-block;
   background-color: transparent;
   border: 2px solid rgba(18, 74, 185, 1);
   border-radius: 5px;
@@ -82,6 +83,7 @@ input[type="checkbox"] {
   padding: 0.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -95,23 +97,34 @@ input[type="checkbox"] {
 }
 
 .todo li {
-  padding: 0.8rem;
   border-radius: 0.5rem;
   color: rgba(18, 74, 185, 1);
   background-color: #e9f3ff;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .todo li {
   cursor: pointer;
 }
 
-.todo li.line-through span {
+.todo li div.checkbox-title,
+.todo li i,
+.todo li.no-todo {
+  padding: 0.8rem;
+}
+
+.todo li div.checkbox-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo li div.line-through span {
   text-decoration-line: line-through;
 }
 
-.todo li.line-through input[type="checkbox"] + .checkbox-label {
+.todo li div.line-through input[type="checkbox"] + .checkbox-label {
   background-color: rgba(18, 74, 185, 1);
 }

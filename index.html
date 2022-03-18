@@ -7,6 +7,10 @@
     <title>Vue Todolist</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -29,18 +33,21 @@
       <div class="todo">
         <h2>Todo:</h2>
         <ul v-if="todos.length > 0">
-          <li
-            v-for="(todo, index) in todos"
-            @click="AddLineThrough(index)"
-            :class="(todo.done === true) ? 'line-through' : 00"
-          >
-            <input type="checkbox" name="rGroup" value="1" id="r1" />
-            <label class="checkbox-label" for="r1"></label>
-            <span>{{ todo.text }}</span>
+          <li v-for="(todo, index) in todos">
+            <div
+              class="checkbox-title"
+              :class="(todo.done === true) ? 'line-through' : 00"
+              @click="AddLineThrough(index)"
+            >
+              <input type="checkbox" name="rGroup" value="1" id="r1" />
+              <label class="checkbox-label" for="r1"></label>
+              <span>{{ todo.text }}</span>
+            </div>
+            <i class="fa-solid fa-xmark" @click="removeTodo(index)"></i>
           </li>
         </ul>
         <ul v-else>
-          <li>No Todo 🚀</li>
+          <li class="no-todo">No Todo 🚀</li>
         </ul>
       </div>
     </main>

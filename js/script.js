@@ -23,6 +23,10 @@ const app = new Vue({
       }
     },
 
+    removeTodo(indexTodo) {
+      this.todos.splice(indexTodo, 1);
+    },
+
     AddLineThrough(todoIndex) {
       this.todos[todoIndex].done = !this.todos[todoIndex].done;
     },
