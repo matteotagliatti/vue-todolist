@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-/* Theme Colours */
+/* Theme Colors */
 
 html[data-theme="blue"] {
   --light-color: rgba(35, 122, 228, 1);
