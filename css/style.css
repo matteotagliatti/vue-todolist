@@ -46,6 +46,10 @@ li {
   margin-bottom: 0.6rem;
 }
 
+small {
+  font-size: 0.7rem;
+}
+
 input {
   background-color: transparent;
   border: none;
@@ -144,4 +148,8 @@ input[type="checkbox"] {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 0.3rem;
 }
