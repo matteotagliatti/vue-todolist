@@ -84,15 +84,6 @@ input[type="checkbox"] {
 
 /* Classes */
 
-.checkbox-label {
-  display: inline-block;
-  background-color: transparent;
-  border: 2px solid var(--dark-color);
-  border-radius: 5px;
-  width: 1rem;
-  height: 1rem;
-}
-
 .title {
   margin-bottom: 2rem;
 }
@@ -143,6 +134,15 @@ input[type="checkbox"] {
 }
 
 /* Classes - Checkbox and Line Through */
+
+.checkbox-label {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid var(--dark-color);
+  border-radius: 5px;
+  width: 1rem;
+  height: 1rem;
+}
 
 .todo li div.checkbox-title {
   width: 100%;
