@@ -25,5 +25,13 @@ const app = new Vue({
     AddLineThrough(todoIndex) {
       this.todos[todoIndex].done = !this.todos[todoIndex].done;
     },
+
+    switchTheme() {
+      if (document.documentElement.getAttribute("data-theme") === "blue") {
+        document.documentElement.setAttribute("data-theme", "red");
+      } else {
+        document.documentElement.setAttribute("data-theme", "blue");
+      }
+    },
   },
 });

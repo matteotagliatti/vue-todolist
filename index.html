@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="blue">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +15,9 @@
   </head>
   <body>
     <main id="app">
+      <div class="change-theme">
+        <i class="fa-solid fa-circle" @click="switchTheme"></i>
+      </div>
       <div class="title">
         <h1>Vue Todolist</h1>
         <span>Todo App made with Vue</span>
