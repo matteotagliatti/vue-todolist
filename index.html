@@ -16,8 +16,15 @@
         <span>Todo App made with Vue</span>
       </div>
       <div class="add-todo">
-        <input type="text" name="" id="" placeholder="Write new todo" />
-        <input type="submit" value="Add" />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Write new todo"
+          v-model="newTodo"
+          @keydown.enter="addTodo"
+        />
+        <input type="submit" value="Add" @click="addTodo" />
       </div>
       <div class="todo">
         <h2>Todo:</h2>
