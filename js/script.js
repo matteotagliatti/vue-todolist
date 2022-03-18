@@ -2,12 +2,7 @@ const app = new Vue({
   el: "#app",
   data: {
     newTodo: "",
-    todos: [
-      {
-        text: "Prova",
-        done: false,
-      },
-    ],
+    todos: [],
   },
 
   methods: {
