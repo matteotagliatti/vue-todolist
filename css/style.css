@@ -28,8 +28,8 @@ body {
   background: var(--light-color);
   background: linear-gradient(
     180deg,
-    var(--light-color) 0%,
-    var(--dark-color) 100%
+    var(--dark-color) 0%,
+    var(--light-color) 100%
   );
 }
 
